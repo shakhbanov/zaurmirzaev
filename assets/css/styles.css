@@ -361,10 +361,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .foot a { color: var(--teal); text-decoration: none; border-bottom: 1px solid currentColor; }
 .foot__divider {
+  display: block;
   width: 32px;
   height: 1px;
   background: var(--line);
-  margin: 14px auto 14px;
+  margin: 14px auto;
+  border: 0;
 }
 
 /* ---------- Hover (only on real hover devices) ---------- */
