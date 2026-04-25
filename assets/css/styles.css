@@ -419,24 +419,8 @@ img { max-width: 100%; height: auto; display: block; }
   .stat .v { font-size: 19px; }
 }
 
-/* ---------- Dark mode (Instagram in-app browser respects iOS system) ---------- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1413;
-    --bg-elev: #1a201f;
-    --ink: #f0ece2;
-    --ink-soft: #c8d6d4;
-    --muted: #8aa19d;
-    --line: #2a3231;
-    --line-soft: #232a29;
-  }
-  body {
-    background-image:
-      radial-gradient(1200px 600px at 50% -200px, rgba(217, 201, 168, 0.10), transparent 60%),
-      radial-gradient(800px 400px at 50% 100%, rgba(31, 74, 71, 0.20), transparent 70%),
-      var(--bg);
-  }
-  .avatar { border-color: var(--bg-elev); }
-  .map-card__route { background: var(--bg-elev); }
-  .card__ico--wa { background: rgba(37, 211, 102, 0.20); color: #5cdc91; }
-}
+/* Force light theme regardless of system / Instagram in-app dark mode.
+   Brand identity stays consistent (sand on teal) on every device.
+   color-scheme: only-light tells the UA not to recolour form controls,
+   scrollbars, or default text-shadows in the dark direction. */
+:root { color-scheme: only light; }
