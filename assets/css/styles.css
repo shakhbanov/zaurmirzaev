@@ -192,16 +192,6 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: -0.01em;
 }
 .cta-primary__title b { font-weight: 500; }
-.cta-primary__chev {
-  margin-left: auto;
-  font-size: 22px;
-  line-height: 1;
-  color: var(--sand);
-  flex: none;
-  transition: transform .2s ease;
-}
-.cta-primary:active .cta-primary__chev,
-.cta-primary:hover .cta-primary__chev { transform: translateX(3px); }
 
 /* ---------- Link cards ---------- */
 .section-label {
@@ -417,7 +407,6 @@ img { max-width: 100%; height: auto; display: block; }
   .hero h1 { font-size: 28px; }
   .cta-primary { padding: 16px 18px; gap: 12px; }
   .cta-primary__title { font-size: 19px; }
-  .cta-primary__chev { font-size: 20px; }
   .card { padding: 12px 14px; gap: 12px; }
   .stat .v { font-size: 19px; }
 }
